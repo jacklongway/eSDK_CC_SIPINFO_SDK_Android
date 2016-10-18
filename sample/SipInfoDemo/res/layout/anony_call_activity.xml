@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:orientation="vertical"
+        android:layout_weight="2"
+        android:padding="5dp">
+        
+        <LinearLayout
+            android:id="@+id/lrlt01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/ip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/tvIp" />
+             <EditText
+                android:id="@+id/uapip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" 
+                android:hint="@string/ipMsg"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+         <LinearLayout
+             android:id="@+id/lrlt02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+         <TextView
+                android:id="@+id/port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPort" />
+             <EditText
+                android:id="@+id/uapport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:gravity="center_horizontal"/>
+             
+               <TextView
+                android:id="@+id/calleeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/accessCode" />
+
+            <EditText
+                android:id="@+id/calleeTextField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+             
+             
+		</LinearLayout>
+		
+         
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+			    
+			     <TextView
+                android:id="@+id/sipMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sipInfo body" />
+
+            <EditText
+                android:id="@+id/sipBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+            </EditText>
+			</LinearLayout>
+         
+         <LinearLayout
+             android:id="@+id/lrlt04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginTop="10dp"
+            android:padding="5dp">
+            
+            <Button
+            android:id="@+id/makeCallBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_weight="3"
+            android:text="@string/anonyCallBtn" /> 
+            <Button
+            android:id="@+id/releaseCallBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="releaseCall" /> 
+            
+            
+        </LinearLayout>
+        
+         <Button
+            android:id="@+id/sipInfoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="sendSipInfo" />
+    </LinearLayout>
+    
+ 
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="#ff4a4a4a"
+        android:orientation="vertical"
+        android:padding="5dp" >
+        <TextView
+        android:id="@+id/logtext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textColor="#ffffff"
+        android:background="#ff4a4a4a" />
+        
+    </LinearLayout>
+
+</LinearLayout>

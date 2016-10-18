@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">SipInfoDemo</string>
+    <string name="anonyCallBtn">anonyCall</string>
+	<string name="accessCode">accessCode</string>
+	<string name="checkServerConfig">check server config plz</string>
+	<string name="accessCodeTip">plz fill accessCode</string>
+	<string name="tvIp">ip</string>
+	<string name="ipMsg">plz input ip address!</string>
+	<string name="tvPort">port</string>
+	<string name="portTip">plz fill accessCode</string>
+</resources>
